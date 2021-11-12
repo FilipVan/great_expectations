@@ -1,7 +1,7 @@
-name: great_expectations
+name: great_expectations_2
 dependencies:
   - python=3.6
   - pypandoc
   - pip:
-      - pip=21.1.2
+      - pip
       - -r requirements.txt

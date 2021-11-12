@@ -1,2 +1,4 @@
 dbt
 great_expectations
+wtforms==2.3.3
+werkzeug==0.16.0
