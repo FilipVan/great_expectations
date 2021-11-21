@@ -8,4 +8,5 @@ __pycache__/
 */.ipynb_checkpoints/*
 **/.DS_Store
 **/target/
+**/.ge_store_backend_id
 .idea/
