@@ -1,5 +1,6 @@
 dbt
 great_expectations
+jupyter
 wtforms==2.3.3
 werkzeug==0.16.0
 pandas==0.24.2
