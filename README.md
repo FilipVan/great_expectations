@@ -2,8 +2,6 @@
 
 This repository contains the material for a number of Great Expectations tutorials. They all contain instructions in the respective README files.
 
-**We invite community contributions for these tutorials!**
-
 
 ## getting_started_tutorial_final_v3_api [TBD]
 This example contains the final state of the "Getting started with Great Expectations" tutorial for the Great 
