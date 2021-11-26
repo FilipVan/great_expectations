@@ -1,0 +1,7 @@
+great_expectations ==  0.13.44
+pypandoc == 1.6.4
+pyspark == 3.2.0
+pyhocon == 0.3.58
+python-dateutil == 2.8.2
+pyarrow == 6.0.1
+click == 8.0.3

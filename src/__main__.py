@@ -11,7 +11,7 @@ logging.basicConfig(level=log_level)
 
 
 def main():
-    """Initialises configuration properties, init spark, and set execution workflow"""
+    """Initialises configuration properties, init spark, and sets execution workflow"""
 
     # init spark
     spark = get_spark_session()
@@ -27,10 +27,13 @@ def main():
 
     # run expectations and get test results
     results = run_expectations(context)
-    results.list_validation_results()
 
-    # TODO check what we can get from the results and fail the job if any of the tests failed
-    return "Hello world"
+    print(results.list_validation_results())
+    # TODO if validation results are false, save data for further analysis, custom monithoring
+
+    # TODO if success, process data.
+
+    print("All finished!")
 
 
 if __name__ == "__main__":

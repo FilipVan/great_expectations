@@ -1,0 +1,451 @@
+{
+  "evaluation_parameters": {},
+  "meta": {
+    "batch_kwargs": {
+      "data_asset_name": "data",
+      "datasource": "taxi_test_data",
+      "path": "/Users/filipvanchevski/Desktop/ge_tutorials/data/yellow_tripdata_sample_2019-01.csv"
+    },
+    "batch_markers": {
+      "ge_load_time": "20211001T100840.811735Z"
+    },
+    "batch_parameters": null,
+    "expectation_suite_meta": {
+      "BasicSuiteBuilderProfiler": {
+        "batch_kwargs": {
+          "data_asset_name": "data",
+          "datasource": "taxi_test_data",
+          "path": "/Users/filipvanchevski/Desktop/ge_tutorials/data/yellow_tripdata_sample_2019-01.csv"
+        },
+        "created_at": 1630669736.641731,
+        "created_by": "BasicSuiteBuilderProfiler"
+      },
+      "citations": [
+        {
+          "batch_kwargs": {
+            "data_asset_name": "data",
+            "datasource": "taxi_test_data",
+            "path": "/Users/filipvanchevski/Desktop/ge_tutorials/data/yellow_tripdata_sample_2019-01.csv"
+          },
+          "batch_markers": {
+            "ge_load_time": "20210903T114843.023079Z"
+          },
+          "citation_date": "2021-09-03T11:48:56.940600Z",
+          "comment": "BasicSuiteBuilderProfiler added a citation based on the current batch."
+        }
+      ],
+      "columns": {
+        "_c0": {
+          "description": ""
+        },
+        "_c1": {
+          "description": ""
+        },
+        "_c10": {
+          "description": ""
+        },
+        "_c11": {
+          "description": ""
+        },
+        "_c12": {
+          "description": ""
+        },
+        "_c13": {
+          "description": ""
+        },
+        "_c14": {
+          "description": ""
+        },
+        "_c15": {
+          "description": ""
+        },
+        "_c16": {
+          "description": ""
+        },
+        "_c17": {
+          "description": ""
+        },
+        "_c2": {
+          "description": ""
+        },
+        "_c3": {
+          "description": ""
+        },
+        "_c4": {
+          "description": ""
+        },
+        "_c5": {
+          "description": ""
+        },
+        "_c6": {
+          "description": ""
+        },
+        "_c7": {
+          "description": ""
+        },
+        "_c8": {
+          "description": ""
+        },
+        "_c9": {
+          "description": ""
+        }
+      },
+      "great_expectations_version": "0.13.32",
+      "notes": {
+        "content": [
+          "#### This is an _example_ suite\n\n- This suite was made by quickly glancing at 1000 rows of your data.\n- This is **not a production suite**. It is meant to show examples of expectations.\n- Because this suite was auto-generated using a very basic profiler that does not know your data like you do, many of the expectations may not be meaningful.\n"
+        ],
+        "format": "markdown"
+      }
+    },
+    "expectation_suite_name": "test_suite",
+    "great_expectations_version": "0.13.36",
+    "run_id": {
+      "run_name": "20211001T100840.960949Z",
+      "run_time": "2021-10-01T10:08:40.960949+00:00"
+    },
+    "validation_time": "20211001T100840.968727Z"
+  },
+  "results": [
+    {
+      "exception_info": {
+        "exception_message": null,
+        "exception_traceback": null,
+        "raised_exception": false
+      },
+      "expectation_config": {
+        "expectation_type": "expect_table_row_count_to_be_between",
+        "ge_cloud_id": null,
+        "kwargs": {
+          "max_value": 11001,
+          "min_value": 9000,
+          "result_format": {
+            "partial_unexpected_count": 20,
+            "result_format": "SUMMARY"
+          }
+        },
+        "meta": {}
+      },
+      "meta": {},
+      "result": {
+        "observed_value": 10001
+      },
+      "success": true
+    },
+    {
+      "exception_info": {
+        "exception_message": null,
+        "exception_traceback": null,
+        "raised_exception": false
+      },
+      "expectation_config": {
+        "expectation_type": "expect_table_column_count_to_equal",
+        "ge_cloud_id": null,
+        "kwargs": {
+          "result_format": {
+            "partial_unexpected_count": 20,
+            "result_format": "SUMMARY"
+          },
+          "value": 18
+        },
+        "meta": {}
+      },
+      "meta": {},
+      "result": {
+        "observed_value": 18
+      },
+      "success": true
+    },
+    {
+      "exception_info": {
+        "exception_message": null,
+        "exception_traceback": null,
+        "raised_exception": false
+      },
+      "expectation_config": {
+        "expectation_type": "expect_table_columns_to_match_ordered_list",
+        "ge_cloud_id": null,
+        "kwargs": {
+          "column_list": [
+            "_c0",
+            "_c1",
+            "_c2",
+            "_c3",
+            "_c4",
+            "_c5",
+            "_c6",
+            "_c7",
+            "_c8",
+            "_c9",
+            "_c10",
+            "_c11",
+            "_c12",
+            "_c13",
+            "_c14",
+            "_c15",
+            "_c16",
+            "_c17"
+          ],
+          "result_format": {
+            "partial_unexpected_count": 20,
+            "result_format": "SUMMARY"
+          }
+        },
+        "meta": {}
+      },
+      "meta": {},
+      "result": {
+        "observed_value": [
+          "_c0",
+          "_c1",
+          "_c2",
+          "_c3",
+          "_c4",
+          "_c5",
+          "_c6",
+          "_c7",
+          "_c8",
+          "_c9",
+          "_c10",
+          "_c11",
+          "_c12",
+          "_c13",
+          "_c14",
+          "_c15",
+          "_c16",
+          "_c17"
+        ]
+      },
+      "success": true
+    },
+    {
+      "exception_info": {
+        "exception_message": null,
+        "exception_traceback": null,
+        "raised_exception": false
+      },
+      "expectation_config": {
+        "expectation_type": "expect_column_values_to_not_be_null",
+        "ge_cloud_id": null,
+        "kwargs": {
+          "column": "_c0",
+          "result_format": {
+            "partial_unexpected_count": 20,
+            "result_format": "SUMMARY"
+          }
+        },
+        "meta": {}
+      },
+      "meta": {},
+      "result": {
+        "element_count": 10001,
+        "partial_unexpected_index_list": null,
+        "partial_unexpected_list": [],
+        "unexpected_count": 0,
+        "unexpected_percent": 0.0,
+        "unexpected_percent_total": 0.0
+      },
+      "success": true
+    },
+    {
+      "exception_info": {
+        "exception_message": null,
+        "exception_traceback": null,
+        "raised_exception": false
+      },
+      "expectation_config": {
+        "expectation_type": "expect_column_distinct_values_to_be_in_set",
+        "ge_cloud_id": null,
+        "kwargs": {
+          "column": "_c0",
+          "result_format": {
+            "partial_unexpected_count": 20,
+            "result_format": "SUMMARY"
+          },
+          "value_set": [
+            "1",
+            "2",
+            "4",
+            "vendor_id"
+          ]
+        },
+        "meta": {}
+      },
+      "meta": {},
+      "result": {
+        "details": {
+          "value_counts": [
+            {
+              "count": 3754,
+              "value": "1"
+            },
+            {
+              "count": 6150,
+              "value": "2"
+            },
+            {
+              "count": 96,
+              "value": "4"
+            },
+            {
+              "count": 1,
+              "value": "vendor_id"
+            }
+          ]
+        },
+        "element_count": 10001,
+        "missing_count": null,
+        "missing_percent": null,
+        "observed_value": [
+          "1",
+          "2",
+          "4",
+          "vendor_id"
+        ]
+      },
+      "success": true
+    },
+    {
+      "exception_info": {
+        "exception_message": null,
+        "exception_traceback": null,
+        "raised_exception": false
+      },
+      "expectation_config": {
+        "expectation_type": "expect_column_kl_divergence_to_be_less_than",
+        "ge_cloud_id": null,
+        "kwargs": {
+          "column": "_c0",
+          "partition_object": {
+            "values": [
+              "1",
+              "2",
+              "4",
+              "vendor_id"
+            ],
+            "weights": [
+              0.37536246375362464,
+              0.6149385061493851,
+              0.009599040095990401,
+              9.999000099990002e-05
+            ]
+          },
+          "result_format": {
+            "partial_unexpected_count": 20,
+            "result_format": "SUMMARY"
+          },
+          "threshold": 0.6
+        },
+        "meta": {}
+      },
+      "meta": {},
+      "result": {
+        "details": {
+          "expected_partition": {
+            "values": [
+              "1",
+              "2",
+              "4",
+              "vendor_id"
+            ],
+            "weights": [
+              0.37536246375362464,
+              0.6149385061493851,
+              0.009599040095990401,
+              9.999000099990002e-05
+            ]
+          },
+          "observed_partition": {
+            "values": [
+              "1",
+              "2",
+              "4",
+              "vendor_id"
+            ],
+            "weights": [
+              0.37536246375362464,
+              0.6149385061493851,
+              0.009599040095990401,
+              9.999000099990002e-05
+            ]
+          }
+        },
+        "element_count": 10001,
+        "missing_count": null,
+        "missing_percent": null,
+        "observed_value": 0.0
+      },
+      "success": true
+    },
+    {
+      "exception_info": {
+        "exception_message": null,
+        "exception_traceback": null,
+        "raised_exception": false
+      },
+      "expectation_config": {
+        "expectation_type": "expect_column_values_to_not_be_null",
+        "ge_cloud_id": null,
+        "kwargs": {
+          "column": "_c1",
+          "result_format": {
+            "partial_unexpected_count": 20,
+            "result_format": "SUMMARY"
+          }
+        },
+        "meta": {}
+      },
+      "meta": {},
+      "result": {
+        "element_count": 10001,
+        "partial_unexpected_index_list": null,
+        "partial_unexpected_list": [],
+        "unexpected_count": 0,
+        "unexpected_percent": 0.0,
+        "unexpected_percent_total": 0.0
+      },
+      "success": true
+    },
+    {
+      "exception_info": {
+        "exception_message": null,
+        "exception_traceback": null,
+        "raised_exception": false
+      },
+      "expectation_config": {
+        "expectation_type": "expect_column_value_lengths_to_be_between",
+        "ge_cloud_id": null,
+        "kwargs": {
+          "column": "_c1",
+          "min_value": 1,
+          "result_format": {
+            "partial_unexpected_count": 20,
+            "result_format": "SUMMARY"
+          }
+        },
+        "meta": {}
+      },
+      "meta": {},
+      "result": {
+        "element_count": 10001,
+        "missing_count": 0,
+        "missing_percent": 0.0,
+        "partial_unexpected_counts": [],
+        "partial_unexpected_index_list": null,
+        "partial_unexpected_list": [],
+        "unexpected_count": 0,
+        "unexpected_percent": 0.0,
+        "unexpected_percent_nonmissing": 0.0,
+        "unexpected_percent_total": 0.0
+      },
+      "success": true
+    }
+  ],
+  "statistics": {
+    "evaluated_expectations": 8,
+    "success_percent": 100.0,
+    "successful_expectations": 8,
+    "unsuccessful_expectations": 0
+  },
+  "success": true
+}

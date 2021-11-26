@@ -20,7 +20,7 @@ BATCH_KWARGS = {
 
 def run_expectations(context) -> CheckpointResult:
     # context = create_data_context()
-    batch = create_batch()
+    batch = create_batch(context=context)
 
     # generate the expectations for columns and tables
     tables_expectations(batch=batch)

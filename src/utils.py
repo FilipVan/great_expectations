@@ -1,10 +1,9 @@
 import os
 import logging
 
-from pyspark.sql import SparkSession, SQLContext, Row, DataFrame
+from pyspark.sql import SparkSession
 
 from pyhocon import ConfigFactory, ConfigTree
-from typing import Dict
 
 log_level = logging.INFO
 logging.basicConfig(level=log_level)
@@ -33,6 +32,6 @@ def read_project_config() -> ConfigTree:
     """
     Parses the projects config file
     """
-    conf_file = f"{get_main_dir()}/config/config.conf"
+    conf_file = f"/Users/filipvanchevski/Desktop/ge_poc/great_expectations/config/config.conf"
 
     return ConfigFactory.parse_file(conf_file)
